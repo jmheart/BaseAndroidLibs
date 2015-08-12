@@ -20,50 +20,50 @@ import android.widget.ImageView;
 public class ImageLoader
 {
 	/**
-	 * 鍥剧墖缂撳瓨鐨勬牳蹇冪被
+	 * 图片缓存的核心类
 	 */
 	private LruCache<String, Bitmap> mLruCache;
 	/**
-	 * 绾跨▼姹?
+	 * 线程池
 	 */
 	private ExecutorService mThreadPool;
 	/**
-	 * 绾跨▼姹犵殑绾跨▼鏁伴噺锛岄粯璁や负1
+	 * 线程池的线程数量，默认为1
 	 */
 	private int mThreadCount = 1;
 	/**
-	 * 闃熷垪鐨勮皟搴︽柟寮?
+	 * 队列的调度方式
 	 */
 	private Type mType = Type.LIFO;
 	/**
-	 * 浠诲姟闃熷垪
+	 * 任务队列
 	 */
 	private LinkedList<Runnable> mTasks;
 	/**
-	 * 杞鐨勭嚎绋?
+	 * 轮询的线程
 	 */
 	private Thread mPoolThread;
 	private Handler mPoolThreadHander;
 
 	/**
-	 * 杩愯鍦║I绾跨▼鐨刪andler锛岀敤浜庣粰ImageView璁剧疆鍥剧墖
+	 * 运行在UI线程的handler，用于给ImageView设置图片
 	 */
 	private Handler mHandler;
 
 	/**
-	 * 寮曞叆涓?涓?间负1鐨勪俊鍙烽噺锛岄槻姝PoolThreadHander鏈垵濮嬪寲瀹屾垚
+	 * 引入一个值为1的信号量，防止mPoolThreadHander未初始化完成
 	 */
 	private volatile Semaphore mSemaphore = new Semaphore(1);
 
 	/**
-	 * 寮曞叆涓?涓?间负1鐨勪俊鍙烽噺锛岀敱浜庣嚎绋嬫睜鍐呴儴涔熸湁涓?涓樆濉炵嚎绋嬶紝闃叉鍔犲叆浠诲姟鐨勯?熷害杩囧揩锛屼娇LIFO鏁堟灉涓嶆槑鏄?
+	 * 引入一个值为1的信号量，由于线程池内部也有一个阻塞线程，防止加入任务的速度过快，使LIFO效果不明显
 	 */
 	private volatile Semaphore mPoolSemaphore;
 
 	private static ImageLoader mInstance;
 
 	/**
-	 * 闃熷垪鐨勮皟搴︽柟寮?
+	 * 队列的调度方式
 	 * 
 	 * @author zhy
 	 * 
@@ -75,7 +75,7 @@ public class ImageLoader
 
 
 	/**
-	 * 鍗曚緥鑾峰緱璇ュ疄渚嬪璞?
+	 * 单例获得该实例对象
 	 * 
 	 * @return
 	 */
@@ -110,7 +110,7 @@ public class ImageLoader
 			{
 				try
 				{
-					// 璇锋眰涓?涓俊鍙烽噺
+					// 请求一个信号量
 					mSemaphore.acquire();
 				} catch (InterruptedException e)
 				{
@@ -131,14 +131,14 @@ public class ImageLoader
 						}
 					}
 				};
-				// 閲婃斁涓?涓俊鍙烽噺
+				// 释放一个信号量
 				mSemaphore.release();
 				Looper.loop();
 			}
 		};
 		mPoolThread.start();
 
-		// 鑾峰彇搴旂敤绋嬪簭鏈?澶у彲鐢ㄥ唴瀛?
+		// 获取应用程序最大可用内存
 		int maxMemory = (int) Runtime.getRuntime().maxMemory();
 		int cacheSize = maxMemory / 8;
 		mLruCache = new LruCache<String, Bitmap>(cacheSize)
@@ -158,7 +158,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 鍔犺浇鍥剧墖
+	 * 加载图片
 	 * 
 	 * @param path
 	 * @param imageView
@@ -167,7 +167,7 @@ public class ImageLoader
 	{
 		// set tag
 		imageView.setTag(path);
-		// UI绾跨▼
+		// UI线程
 		if (mHandler == null)
 		{
 			mHandler = new Handler()
@@ -229,7 +229,7 @@ public class ImageLoader
 	}
 	
 	/**
-	 * 娣诲姞涓?涓换鍔?
+	 * 添加一个任务
 	 * 
 	 * @param runnable
 	 */
@@ -237,7 +237,7 @@ public class ImageLoader
 	{
 		try
 		{
-			// 璇锋眰淇″彿閲忥紝闃叉mPoolThreadHander涓簄ull
+			// 请求信号量，防止mPoolThreadHander为null
 			if (mPoolThreadHander == null)
 				mSemaphore.acquire();
 		} catch (InterruptedException e)
@@ -248,7 +248,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 鍙栧嚭涓?涓换鍔?
+	 * 取出一个任务
 	 * 
 	 * @return
 	 */
@@ -265,7 +265,7 @@ public class ImageLoader
 	}
 	
 	/**
-	 * 鍗曚緥鑾峰緱璇ュ疄渚嬪璞?
+	 * 单例获得该实例对象
 	 * 
 	 * @return
 	 */
@@ -287,7 +287,7 @@ public class ImageLoader
 
 
 	/**
-	 * 鏍规嵁ImageView鑾峰緱閫傚綋鐨勫帇缂╃殑瀹藉拰楂?
+	 * 根据ImageView获得适当的压缩的宽和高
 	 * 
 	 * @param imageView
 	 * @return
@@ -326,7 +326,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 浠嶭ruCache涓幏鍙栦竴寮犲浘鐗囷紝濡傛灉涓嶅瓨鍦ㄥ氨杩斿洖null銆?
+	 * 从LruCache中获取一张图片，如果不存在就返回null。
 	 */
 	private Bitmap getBitmapFromLruCache(String key)
 	{
@@ -334,7 +334,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 寰?LruCache涓坊鍔犱竴寮犲浘鐗?
+	 * 往LruCache中添加一张图片
 	 * 
 	 * @param key
 	 * @param bitmap
@@ -349,7 +349,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 璁＄畻inSampleSize锛岀敤浜庡帇缂╁浘鐗?
+	 * 计算inSampleSize，用于压缩图片
 	 * 
 	 * @param options
 	 * @param reqWidth
@@ -359,14 +359,14 @@ public class ImageLoader
 	private int calculateInSampleSize(BitmapFactory.Options options,
 			int reqWidth, int reqHeight)
 	{
-		// 婧愬浘鐗囩殑瀹藉害
+		// 源图片的宽度
 		int width = options.outWidth;
 		int height = options.outHeight;
 		int inSampleSize = 1;
 
 		if (width > reqWidth && height > reqHeight)
 		{
-			// 璁＄畻鍑哄疄闄呭搴﹀拰鐩爣瀹藉害鐨勬瘮鐜?
+			// 计算出实际宽度和目标宽度的比率
 			int widthRatio = Math.round((float) width / (float) reqWidth);
 			int heightRatio = Math.round((float) width / (float) reqWidth);
 			inSampleSize = Math.max(widthRatio, heightRatio);
@@ -375,7 +375,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 鏍规嵁璁＄畻鐨刬nSampleSize锛屽緱鍒板帇缂╁悗鍥剧墖
+	 * 根据计算的inSampleSize，得到压缩后图片
 	 * 
 	 * @param pathName
 	 * @param reqWidth
@@ -385,14 +385,14 @@ public class ImageLoader
 	private Bitmap decodeSampledBitmapFromResource(String pathName,
 			int reqWidth, int reqHeight)
 	{
-		// 绗竴娆¤В鏋愬皢inJustDecodeBounds璁剧疆涓簍rue锛屾潵鑾峰彇鍥剧墖澶у皬
+		// 第一次解析将inJustDecodeBounds设置为true，来获取图片大小
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds = true;
 		BitmapFactory.decodeFile(pathName, options);
-		// 璋冪敤涓婇潰瀹氫箟鐨勬柟娉曡绠梚nSampleSize鍊?
+		// 调用上面定义的方法计算inSampleSize值
 		options.inSampleSize = calculateInSampleSize(options, reqWidth,
 				reqHeight);
-		// 浣跨敤鑾峰彇鍒扮殑inSampleSize鍊煎啀娆¤В鏋愬浘鐗?
+		// 使用获取到的inSampleSize值再次解析图片
 		options.inJustDecodeBounds = false;
 		Bitmap bitmap = BitmapFactory.decodeFile(pathName, options);
 		
@@ -413,7 +413,7 @@ public class ImageLoader
 	}
 
 	/**
-	 * 鍙嶅皠鑾峰緱ImageView璁剧疆鐨勬渶澶у搴﹀拰楂樺害
+	 * 反射获得ImageView设置的最大宽度和高度
 	 * 
 	 * @param object
 	 * @param fieldName

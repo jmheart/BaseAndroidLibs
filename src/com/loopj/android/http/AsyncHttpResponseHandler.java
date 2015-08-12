@@ -186,6 +186,18 @@ public class AsyncHttpResponseHandler {
      */
     @Deprecated
     public void onSuccess(String content) {
+    	
+    }
+    
+    /**
+     * Fired when a request returns successfully, override to handle in your own code
+     *
+     * @param content the body of the HTTP response from the server
+     * @deprecated use {@link #onSuccess(int, Header[], byte[])}
+     */
+    @Deprecated
+    public void onSuccessJson(String content) {
+    	
     }
 
     /**
@@ -210,7 +222,7 @@ public class AsyncHttpResponseHandler {
      */
     @Deprecated
     public void onSuccess(int statusCode, String content) {
-        onSuccess(content);
+    	onSuccess(content);
     }
 
     /**
@@ -223,6 +235,7 @@ public class AsyncHttpResponseHandler {
     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
         try {
             String response = new String(responseBody, getCharset());
+            Log.i("BaseAndroidLibs", "ÍøÂç·µ»ØÊý¾Ý£º"+response);
             onSuccess(statusCode, headers, response);
         } catch (UnsupportedEncodingException e) {
             Log.e(LOG_TAG, e.toString());

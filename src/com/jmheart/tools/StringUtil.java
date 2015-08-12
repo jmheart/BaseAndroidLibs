@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author zhaojing
+ * @author liujie
  * @version 2015-04-01 09:02:25
  * 
  *          ×Ö·û´®¹¤¾ßÀà

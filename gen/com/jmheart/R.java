@@ -1249,11 +1249,6 @@ containing a value of this type.
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     
 
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -1472,6 +1467,7 @@ containing a value of this type.
         public static int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
+        public static int test=0x7f0b008d;
     }
     public static final class styleable {
         /**  ============================================ 
@@ -2620,7 +2616,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x010103ea
+            0x0101012f, 0x01010130, 0x01010131, 0x0101052f
         };
         /**
           <p>
