@@ -1,5 +1,4 @@
-<resources>
-
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
@@ -11,8 +10,80 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <style name="test">
-        
+    <!-- 按钮 -->
+    <style name="button">
+        <item name="android:layout_height">45.0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/button_confirm</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_m</item>
     </style>
-
+    <!-- 按钮圆角 -->
+    <style name="button_re">
+        <item name="android:layout_height">45.0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/button_confirm</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_m</item>
+    </style>
+    <!-- 编辑框 -->
+    <style name="editview">
+    
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/text_m</item>
+  
+    </style>
+    <!-- 编辑框圆角 -->
+    <style name="editview_re">
+         
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/text_m</item>
+  
+    </style>
+    <!--小字体  -->
+    <style name="textview_s">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">@dimen/text_s</item>
+    </style>
+     <!--中字体  -->
+ 	<style name="textview_m">
+ 	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">@dimen/text_m</item>
+ 	</style>
+ 	 <!--大字体  -->
+ 	<style name="textview_b">
+ 	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">@dimen/text_b</item>
+ 	</style>
+ 	 <!--listview列表  -->
+ 	 <style name="listview">
+          <item name="android:layout_width">match_parent</item>
+          <item name="android:layout_height">match_parent</item>
+          <item name="android:divider">@color/grey</item>
+          <item name="android:dividerHeight">0.01dp</item>
+          <item name="android:listSelector">@android:color/transparent</item>
+          <item name="android:scrollbars">none</item>
+       </style>
+         <!-- 加载对话框 -->
+    <style name="Dialog_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!--加载对话框  -->
+        <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 </resources>

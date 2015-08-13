@@ -30,7 +30,7 @@ public class IsPhoneRule extends AnnotationRule<IsPhone, String> {
     @Override
     public boolean isValid(final String isphone) {
     	
-    	if (isphone.matches("[1][3578]\\d{9}")) {
+    	if (isphone.matches("[1][34578]\\d{9}")) {
 			return true;
 		}
 		return false;

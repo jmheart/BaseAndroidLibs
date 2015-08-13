@@ -2,6 +2,9 @@ package com.jmheart.tools;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
+
+import android.util.Log;
 
 /**
  * @author liujie
@@ -104,5 +107,28 @@ public class StringUtil {
 	        long loc_time = Long.valueOf(time);
 	        re_StrTime = sdf.format(new Date(loc_time * 1000L));
 	        return re_StrTime;
+	}
+	public static String getCurrentTime(String format) {
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat(format, Locale.getDefault());
+		String currentTime = sdf.format(date);
+		return currentTime;
+	}
+	/**
+	 * @return
+	 * 得到当前时间
+	 */
+	public static String getTime() {
+		return getCurrentTime("yyyy-MM-dd  HH:mm:ss");
+	}
+	/**
+	 * 得到时间搓
+	 * @return
+	 */
+	public static String getcuoTime()
+	{
+		Long tsLong = System.currentTimeMillis()/1000;
+		String ts = tsLong.toString();
+		return ts;
 	}
 }

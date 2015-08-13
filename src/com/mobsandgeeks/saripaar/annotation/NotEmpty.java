@@ -33,5 +33,5 @@ public @interface NotEmpty {
 
     int sequence()      default -1;
     int messageResId()  default -1;
-    String message()    default "This field is required";
+    String message()    default "²»ÄÜÎª¿Õ£¡";
 }

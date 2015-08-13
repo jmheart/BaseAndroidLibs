@@ -10,11 +10,14 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.jmheart.view.listview.RefreshListView.OnLoadListener;
+import com.jmheart.view.listview.RefreshListView.OnRefreshListener;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.Validator.ValidationListener;
 
-public class BaseActivity extends Activity implements OnClickListener,ValidationListener{
+public class BaseActivity extends Activity implements OnClickListener,ValidationListener,
+OnRefreshListener,OnLoadListener {
  
 	public Validator validator;
 	 @Override
@@ -103,6 +106,16 @@ public class BaseActivity extends Activity implements OnClickListener,Validation
 	        }
 	        
 		}
+		
+	}
+	@Override
+	public void onLoad() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void onRefresh() {
+		// TODO Auto-generated method stub
 		
 	}
 	
