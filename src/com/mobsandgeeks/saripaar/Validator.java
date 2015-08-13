@@ -46,6 +46,7 @@ import com.mobsandgeeks.saripaar.annotation.Domain;
 import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.Future;
 import com.mobsandgeeks.saripaar.annotation.IpAddress;
+import com.mobsandgeeks.saripaar.annotation.IsPhone;
 import com.mobsandgeeks.saripaar.annotation.Isbn;
 import com.mobsandgeeks.saripaar.annotation.Length;
 import com.mobsandgeeks.saripaar.annotation.Max;
@@ -990,6 +991,6 @@ public class Validator {
                 ConfirmEmail.class, ConfirmPassword.class, CreditCard.class,
                 Digits.class, Domain.class, Email.class, Future.class,
                 IpAddress.class, Isbn.class, Length.class, NotEmpty.class,
-                Password.class, Past.class, Pattern.class, Url.class);
+                Password.class, Past.class, Pattern.class, Url.class, IsPhone.class);
     }
 }
