@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.jmheart.R;
+import com.jmheart.tools.ToastCommom;
 import com.jmheart.view.listview.RefreshListView.OnLoadListener;
 import com.jmheart.view.listview.RefreshListView.OnRefreshListener;
 import com.mobsandgeeks.saripaar.ValidationError;
@@ -20,6 +23,7 @@ public class BaseActivity extends Activity implements OnClickListener,Validation
 OnRefreshListener,OnLoadListener {
  
 	public Validator validator;
+	public ToastCommom toastCommom;
 	 @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -28,6 +32,7 @@ OnRefreshListener,OnLoadListener {
 	}
 	 private void inintValida()
 	 {
+		    toastCommom = ToastCommom.createToastConfig(this,(ViewGroup)findViewById(R.id.toast_layout_root)); 
 		    validator = new Validator(this);
 		    validator.setValidationListener(this);
 	 }
@@ -42,7 +47,8 @@ OnRefreshListener,OnLoadListener {
 	 */
 	public void showToast(String msg)
 	{
-		Toast.makeText(this, ""+msg, Toast.LENGTH_SHORT).show();
+		toastCommom.ToastShow(msg);
+		//Toast.makeText(this, ""+msg, Toast.LENGTH_SHORT).show();
 	}
 	/**
 	 * @param msg

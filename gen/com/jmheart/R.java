@@ -1100,6 +1100,8 @@ containing a value of this type.
         public static int loading_6=0x7f020062;
         public static int loading_7=0x7f020063;
         public static int pull_to_refresh_arrow=0x7f020064;
+        public static int toast_shape=0x7f020065;
+        public static int toast_tishi=0x7f020066;
     }
     public static final class id {
         public static int action_bar=0x7f05001c;
@@ -1113,7 +1115,7 @@ containing a value of this type.
         public static int action_menu_divider=0x7f050016;
         public static int action_menu_presenter=0x7f050017;
         public static int action_mode_close_button=0x7f050024;
-        public static int action_settings=0x7f050045;
+        public static int action_settings=0x7f050048;
         public static int activity_chooser_view_content=0x7f050025;
         public static int always=0x7f05000b;
         public static int arrow=0x7f050044;
@@ -1133,6 +1135,7 @@ containing a value of this type.
         public static int icon=0x7f05002a;
         public static int ifRoom=0x7f05000a;
         public static int image=0x7f050027;
+        public static int iv=0x7f050046;
         public static int lastUpdate=0x7f050043;
         public static int layout=0x7f050040;
         public static int listMode=0x7f050001;
@@ -1166,8 +1169,10 @@ containing a value of this type.
         public static int split_action_bar=0x7f05001e;
         public static int submit_area=0x7f050039;
         public static int tabMode=0x7f050002;
+        public static int text=0x7f050047;
         public static int tip=0x7f050042;
         public static int title=0x7f05002b;
+        public static int toast_layout_root=0x7f050045;
         public static int top_action_bar=0x7f050020;
         public static int up=0x7f050021;
         public static int useLogo=0x7f050003;
@@ -1226,6 +1231,7 @@ containing a value of this type.
         public static int listview_footer=0x7f030018;
         public static int pull_to_refresh_header=0x7f030019;
         public static int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static int toast=0x7f03001b;
     }
     public static final class menu {
         public static int main=0x7f0c0000;
