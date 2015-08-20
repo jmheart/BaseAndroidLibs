@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -30,6 +32,15 @@ OnRefreshListener,OnLoadListener {
 		super.onCreate(savedInstanceState);
 		inintValida();
 	}
+	 /**
+	  * ¶¶¶¯
+	 * @param view
+	 */
+	public void shark(View view)
+	 {
+		 Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);  
+		 view.startAnimation(shake);  
+	 }
 	 private void inintValida()
 	 {
 		    toastCommom = ToastCommom.createToastConfig(this,(ViewGroup)findViewById(R.id.toast_layout_root)); 

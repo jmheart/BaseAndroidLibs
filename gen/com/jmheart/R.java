@@ -15,6 +15,8 @@ public final class R {
         public static int abc_slide_in_top=0x7f040003;
         public static int abc_slide_out_bottom=0x7f040004;
         public static int abc_slide_out_top=0x7f040005;
+        public static int cycle_7=0x7f040006;
+        public static int shake=0x7f040007;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
