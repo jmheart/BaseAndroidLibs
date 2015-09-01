@@ -6,14 +6,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.jmheart.R;
+import com.jmheart.animation.AppAnimation;
 import com.jmheart.tools.ToastCommom;
 import com.jmheart.view.listview.RefreshListView.OnLoadListener;
 import com.jmheart.view.listview.RefreshListView.OnRefreshListener;
@@ -30,6 +30,7 @@ OnRefreshListener,OnLoadListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		inintValida();
 	}
 	 /**
@@ -38,8 +39,7 @@ OnRefreshListener,OnLoadListener {
 	 */
 	public void shark(View view)
 	 {
-		 Animation shake = AnimationUtils.loadAnimation(this, R.anim.shake);  
-		 view.startAnimation(shake);  
+		new AppAnimation(this).shark(view); 
 	 }
 	 private void inintValida()
 	 {
@@ -65,9 +65,13 @@ OnRefreshListener,OnLoadListener {
 	 * @param msg
 	 * ¥Ú”°log
 	 */
-	public void showLog(String msg)
+	public static void showLog(String msg)
 	{
-		Log.i("log¥Ú”°£∫", ""+msg);
+		if (BaseApplication.islog) {
+			
+			Log.i("log¥Ú”°£∫", ""+msg);
+		}
+		
 	}
 	/**
 	 * @param v

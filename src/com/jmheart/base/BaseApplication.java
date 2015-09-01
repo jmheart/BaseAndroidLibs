@@ -12,6 +12,8 @@ import android.os.Handler;
 
 import com.jmheart.R;
 import com.jmheart.abnormal.CrashHandler;
+import com.jmheart.net.ApiHttpClient;
+import com.loopj.android.http.AsyncHttpClient;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -22,6 +24,18 @@ import com.nostra13.universalimageloader.core.display.SimpleBitmapDisplayer;
 
 public class BaseApplication extends Application {
 	public static final String TAG = "BaseApplication";
+	/**
+	 * 调试模式
+	 */
+	public static boolean islog=true;
+	/**
+	 * 主机域名
+	 */
+	public static String HOST="http://wx.zgcainiao.com";
+	/**
+	 * 接口地址
+	 */
+	public static String API_URL="http://wx.zgcainiao.com/index.php/shop/";
 	/*
 	 * 图片缓存
 	 */
@@ -58,10 +72,13 @@ public class BaseApplication extends Application {
 		// TODO Auto-generated method stub
 		super.onCreate();
 		setInstance(this);
-		initImageLoader(getApplicationContext());
+		appinitImageLoader(getApplicationContext());
 		CrashHandler handler = new CrashHandler();
 		handler.init(getApplicationContext());
 		Thread.setDefaultUncaughtExceptionHandler(handler);
+		// 初始化网络请求
+        AsyncHttpClient client = new AsyncHttpClient();
+        ApiHttpClient.setHttpClient(client);
 	}
 
 	/**
@@ -88,7 +105,7 @@ public class BaseApplication extends Application {
 	 * @param context
 	 * 图片缓存
 	 */
-	public static void initImageLoader(Context context) {
+	public static void appinitImageLoader(Context context) {
 		// This configuration tuning is custom. You can tune every option, you may tune some of them,
 		// or you can create default configuration by
 		//  ImageLoaderConfiguration.createDefault(this);

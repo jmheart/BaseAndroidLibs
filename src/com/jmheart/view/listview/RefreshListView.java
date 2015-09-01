@@ -323,6 +323,15 @@ public class RefreshListView extends ListView implements OnScrollListener {
 		}
 
 	}
+	//加载完成
+	public void  isEndDate()
+	{
+		isLoadFull = true;
+		loadFull.setVisibility(View.VISIBLE);
+		loading.setVisibility(View.GONE);
+		more.setVisibility(View.GONE);
+		noData.setVisibility(View.GONE);
+	}
 
 	// 根据当前状态，调整header
 	private void refreshHeaderViewByState() {

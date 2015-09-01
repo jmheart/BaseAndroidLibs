@@ -22,7 +22,11 @@ public class BaseFragment extends Fragment implements OnClickListener{
 	 */
 	public void showLog(String msg)
 	{
-		Log.i("log¥Ú”°£∫", ""+msg);
+		if (BaseApplication.islog) {
+			
+			Log.i("log¥Ú”°£∫", ""+msg);
+		}
+		
 	}
 	@Override
 	public void onClick(View v) {

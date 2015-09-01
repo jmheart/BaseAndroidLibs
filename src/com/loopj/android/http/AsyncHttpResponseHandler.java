@@ -30,6 +30,8 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.HttpResponseException;
 import org.apache.http.util.ByteArrayBuffer;
 
+import com.jmheart.base.BaseActivity;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -232,10 +234,11 @@ public class AsyncHttpResponseHandler {
      * @param headers      return headers, if any
      * @param responseBody the body of the HTTP response from the server
      */
+    
     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
         try {
             String response = new String(responseBody, getCharset());
-            Log.i("BaseAndroidLibs", "网络返回数据："+response);
+            BaseActivity.showLog("请求返回："+response);
             onSuccess(statusCode, headers, response);
         } catch (UnsupportedEncodingException e) {
             Log.e(LOG_TAG, e.toString());
@@ -305,13 +308,8 @@ public class AsyncHttpResponseHandler {
      */
     public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
         String response;
-        try {
-            response = new String(responseBody, getCharset());
-            onFailure(statusCode, headers, error, response);
-        } catch (UnsupportedEncodingException e) {
-            Log.e(LOG_TAG, e.toString());
-            onFailure(statusCode, headers, e, null);
-        }
+        response = "错误";//new String(responseBody, getCharset());
+		onFailure(statusCode, headers, error, response);
     }
 
     /**
