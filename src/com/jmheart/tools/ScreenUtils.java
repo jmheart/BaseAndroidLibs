@@ -2,6 +2,7 @@
 
 
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -20,7 +21,7 @@ public class ScreenUtils
 	}
 
 	/**
-	 * 获得屏幕高度
+	 * 获得屏幕宽度
 	 * 
 	 * @param context
 	 * @return
@@ -35,7 +36,7 @@ public class ScreenUtils
 	}
 
 	/**
-	 * 获得屏幕宽度
+	 * 获得屏幕高度
 	 * 
 	 * @param context
 	 * @return
@@ -100,7 +101,7 @@ public class ScreenUtils
 	 * @param activity
 	 * @return
 	 */
-	public static Bitmap snapShotWithoutStatusBar(Activity activity)
+	@SuppressLint("NewApi") public static Bitmap snapShotWithoutStatusBar(Activity activity)
 	{
 		View view = activity.getWindow().getDecorView();
 		view.setDrawingCacheEnabled(true);
