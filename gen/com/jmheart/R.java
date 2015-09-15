@@ -1201,8 +1201,9 @@ containing a value of this type.
         public static int pull_to_refresh_arrow=0x7f02006e;
         public static int seek_thumb_normal=0x7f02006f;
         public static int seek_thumb_pressed=0x7f020070;
-        public static int toast_shape=0x7f020071;
-        public static int toast_tishi=0x7f020072;
+        public static int share_lin=0x7f020071;
+        public static int toast_shape=0x7f020072;
+        public static int toast_tishi=0x7f020073;
     }
     public static final class id {
         public static int action_bar=0x7f05001c;
@@ -1220,7 +1221,7 @@ containing a value of this type.
         public static int activity_chooser_view_content=0x7f050025;
         public static int alertTitle=0x7f050040;
         public static int always=0x7f05000b;
-        public static int arrow=0x7f050052;
+        public static int arrow=0x7f050053;
         public static int beginning=0x7f050011;
         public static int button1=0x7f050045;
         public static int button2=0x7f050046;
@@ -1243,9 +1244,9 @@ containing a value of this type.
         public static int ifRoom=0x7f05000a;
         public static int image=0x7f050027;
         public static int img=0x7f05004c;
-        public static int iv=0x7f050054;
-        public static int lastUpdate=0x7f050051;
-        public static int layout=0x7f05004e;
+        public static int iv=0x7f050055;
+        public static int lastUpdate=0x7f050052;
+        public static int layout=0x7f05004f;
         public static int listMode=0x7f050001;
         public static int list_item=0x7f050029;
         public static int loadFull=0x7f050047;
@@ -1262,7 +1263,7 @@ containing a value of this type.
         public static int progress_circular=0x7f050018;
         public static int progress_horizontal=0x7f050019;
         public static int radio=0x7f05002f;
-        public static int refreshing=0x7f05004f;
+        public static int refreshing=0x7f050050;
         public static int search_badge=0x7f050032;
         public static int search_bar=0x7f050031;
         public static int search_button=0x7f050033;
@@ -1280,13 +1281,13 @@ containing a value of this type.
         public static int split_action_bar=0x7f05001e;
         public static int submit_area=0x7f050039;
         public static int tabMode=0x7f050002;
-        public static int text=0x7f050055;
-        public static int tip=0x7f050050;
+        public static int text=0x7f05004e;
+        public static int tip=0x7f050051;
         public static int tipTextView=0x7f05004d;
         public static int title=0x7f05002b;
         public static int titleDivider=0x7f050041;
         public static int title_template=0x7f05003f;
-        public static int toast_layout_root=0x7f050053;
+        public static int toast_layout_root=0x7f050054;
         public static int topPanel=0x7f05003e;
         public static int top_action_bar=0x7f050020;
         public static int up=0x7f050021;
@@ -1346,9 +1347,10 @@ containing a value of this type.
         public static int dialog_layout=0x7f030018;
         public static int listview_footer=0x7f030019;
         public static int loading_dialog=0x7f03001a;
-        public static int pull_to_refresh_header=0x7f03001b;
-        public static int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static int toast=0x7f03001d;
+        public static int net_dialog_loaing=0x7f03001b;
+        public static int pull_to_refresh_header=0x7f03001c;
+        public static int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static int toast=0x7f03001e;
     }
     public static final class menu {
         public static int main=0x7f0c0000;

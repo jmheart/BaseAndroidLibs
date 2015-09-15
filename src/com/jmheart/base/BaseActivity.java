@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.jmheart.R;
 import com.jmheart.animation.AppAnimation;
 import com.jmheart.tools.ToastCommom;
+import com.jmheart.view.dialog.LoadingDialog;
 import com.jmheart.view.listview.RefreshListView.OnLoadListener;
 import com.jmheart.view.listview.RefreshListView.OnRefreshListener;
 import com.mobsandgeeks.saripaar.ValidationError;
@@ -26,6 +27,7 @@ OnRefreshListener,OnLoadListener {
  
 	public Validator validator;
 	public ToastCommom toastCommom;
+	LoadingDialog dialog;
 	 @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,6 +35,27 @@ OnRefreshListener,OnLoadListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		inintValida();
 	}
+	 public void showDialog()
+	 {
+		 dialog=new LoadingDialog(this);
+		 dialog.SetMessage("º”‘ÿ÷–...");
+		 dialog.showDialog();
+		 
+	 }
+	 public void showDialog(String msg)
+	 {
+		 dialog=new LoadingDialog(this);
+		 dialog.SetMessage(msg);
+		 dialog.showDialog();
+		 
+	 }
+	 public void dissDialog()
+	 {
+		 if (dialog!=null) {
+			 dialog.dismissDialog();
+		}
+		 
+	 }
 	 /**
 	  * ∂∂∂Ø
 	 * @param view

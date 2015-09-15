@@ -47,18 +47,14 @@ public abstract class CommonAdapter<T> extends BaseAdapter
 		final ViewHolder viewHolder = getViewHolder(position, convertView,
 				parent);
 		convert(viewHolder, getItem(position));
-		if (position==getCount()-1) {
-			
-				loadMomeDate();
-			
-		}
+		
 		return viewHolder.getConvertView();
 
 	}
 
 	public abstract void convert(ViewHolder helper, T item);
 	
-	public abstract void loadMomeDate();
+
 	private ViewHolder getViewHolder(int position, View convertView,
 			ViewGroup parent)
 	{

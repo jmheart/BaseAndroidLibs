@@ -23,7 +23,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 /**
- * @author zhaojing
+ * @author liujie
  * @version 2015年04月01日 上午09:17:58
  * 
  *          捕获异常 并存储到文件中

@@ -12,6 +12,7 @@
 	    android:layout_height="wrap_content"
 	    android:src="@drawable/toast_tishi"
 	    android:id="@+id/iv"
+	    android:visibility="gone"
 	    android:paddingTop="5dp"
 	    android:paddingLeft="5dp"
 	    />
@@ -21,6 +22,7 @@
 	    android:layout_height="wrap_content"
 	    android:padding="10dp"
 	    android:text="提示"
+	    android:layout_margin="20dp"
 	    android:textSize="@dimen/text_m"
 	    android:textColor="@color/white"
 	    />
