@@ -114,4 +114,5 @@
         <item name="android:textColor">#ffffff</item>
         <item name="android:gravity">center</item>
     </style>
+    
 </resources>

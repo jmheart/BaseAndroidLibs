@@ -83,6 +83,12 @@ public class ApiHttpClient {
         log(new StringBuilder("POST ").append(partUrl).append("&")
                 .append(params).toString());
     }
+    public static void tpost(String partUrl, RequestParams params,
+            AsyncHttpResponseHandler handler) {
+        client.post(partUrl, params, handler);
+        log(new StringBuilder("POST ").append(partUrl).append("&")
+                .append(params).toString());
+    }
     public static void post(String str,String partUrl, RequestParams params,
             AsyncHttpResponseHandler handler) {
         client.post(HOST+str+""+partUrl, params, handler);

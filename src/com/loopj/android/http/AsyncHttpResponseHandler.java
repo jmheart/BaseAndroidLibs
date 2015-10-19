@@ -280,7 +280,7 @@ public class AsyncHttpResponseHandler {
     @Deprecated
     public void onFailure(int statusCode, Throwable error, String content) {
         // By default, call the chain method onFailure(Throwable,String)
-        onFailure(error, content);
+        onFailure(error, content+"ÏìÓ¦Âë£º"+statusCode);
     }
 
     /**
@@ -295,7 +295,7 @@ public class AsyncHttpResponseHandler {
     @Deprecated
     public void onFailure(int statusCode, Header[] headers, Throwable error, String content) {
         // By default, call the chain method onFailure(int,Throwable,String)
-        onFailure(statusCode, error, content);
+        onFailure(statusCode, error, content+"error"+error.toString());
     }
 
     /**

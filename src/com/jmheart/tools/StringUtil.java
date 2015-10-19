@@ -85,7 +85,7 @@ public class StringUtil {
 	        if (time.equals("")||time==null) {
 	                return "";
 	        }
-	        sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+	        sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	        long loc_time = Long.valueOf(time);
 	        re_StrTime = sdf.format(new Date(loc_time * 1000L));
 	        return re_StrTime;
@@ -119,7 +119,7 @@ public class StringUtil {
 	 * 得到当前时间
 	 */
 	public static String getTime() {
-		return getCurrentTime("yyyy-MM-dd  HH:mm:ss");
+		return getCurrentTime("yyyy-MM-dd HH:mm:ss");
 	}
 	/**
 	 * 得到时间搓

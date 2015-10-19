@@ -343,6 +343,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int dropdownListPreferredItemHeight=0x7f010048;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int errorImage=0x7f01007a;
         /**  The drawable to show in the button for expanding the activities overflow popup.
              <strong>Note:</strong> Clients would like to set this drawable
              as a clue about the action the chosen activity will perform. For
@@ -423,6 +427,158 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int itemPadding=0x7f010037;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_heightPercent=0x7f01007c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginBottomPercent=0x7f010081;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginEndPercent=0x7f010083;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginLeftPercent=0x7f01007e;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginPercent=0x7f01007d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginRightPercent=0x7f010080;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginStartPercent=0x7f010082;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_marginTopPercent=0x7f01007f;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_maxHeightPercent=0x7f010086;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_maxWidthPercent=0x7f010085;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_minHeightPercent=0x7f010088;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_minWidthPercent=0x7f010087;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_paddingBottomPercent=0x7f01008b;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_paddingLeftPercent=0x7f01008c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_paddingPercent=0x7f010089;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_paddingRightPercent=0x7f01008d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_paddingTopPercent=0x7f01008a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_textSizePercent=0x7f010084;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int layout_widthPercent=0x7f01007b;
         /**  Drawable used as a background for selected list items. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -543,6 +699,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int panelMenuListWidth=0x7f01004a;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int placeHolder=0x7f010079;
         /**  Default PopupMenu style. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1188,22 +1348,25 @@ containing a value of this type.
         public static int h_line=0x7f020061;
         public static int ic_error=0x7f020062;
         public static int ic_launcher=0x7f020063;
-        public static int loading_0=0x7f020064;
-        public static int loading_1=0x7f020065;
-        public static int loading_2=0x7f020066;
-        public static int loading_3=0x7f020067;
-        public static int loading_4=0x7f020068;
-        public static int loading_5=0x7f020069;
-        public static int loading_6=0x7f02006a;
-        public static int loading_7=0x7f02006b;
-        public static int oer=0x7f02006c;
-        public static int oer_bg=0x7f02006d;
-        public static int pull_to_refresh_arrow=0x7f02006e;
-        public static int seek_thumb_normal=0x7f02006f;
-        public static int seek_thumb_pressed=0x7f020070;
-        public static int share_lin=0x7f020071;
-        public static int toast_shape=0x7f020072;
-        public static int toast_tishi=0x7f020073;
+        public static int layout_bg=0x7f020064;
+        public static int loading_0=0x7f020065;
+        public static int loading_1=0x7f020066;
+        public static int loading_2=0x7f020067;
+        public static int loading_3=0x7f020068;
+        public static int loading_4=0x7f020069;
+        public static int loading_5=0x7f02006a;
+        public static int loading_6=0x7f02006b;
+        public static int loading_7=0x7f02006c;
+        public static int oer=0x7f02006d;
+        public static int oer_bg=0x7f02006e;
+        public static int pull_to_refresh_arrow=0x7f02006f;
+        public static int seek_thumb_normal=0x7f020070;
+        public static int seek_thumb_pressed=0x7f020071;
+        public static int share_lin=0x7f020072;
+        public static int toast_shape=0x7f020073;
+        public static int toast_tishi=0x7f020074;
+        public static int wheel_bg=0x7f020075;
+        public static int wheel_val=0x7f020076;
     }
     public static final class id {
         public static int action_bar=0x7f05001c;
@@ -1217,7 +1380,7 @@ containing a value of this type.
         public static int action_menu_divider=0x7f050016;
         public static int action_menu_presenter=0x7f050017;
         public static int action_mode_close_button=0x7f050024;
-        public static int action_settings=0x7f050056;
+        public static int action_settings=0x7f05005c;
         public static int activity_chooser_view_content=0x7f050025;
         public static int alertTitle=0x7f050040;
         public static int always=0x7f05000b;
@@ -1229,6 +1392,7 @@ containing a value of this type.
         public static int collapseActionView=0x7f05000d;
         public static int contentPanel=0x7f050042;
         public static int customPanel=0x7f050044;
+        public static int daywheel=0x7f050056;
         public static int default_activity_button=0x7f050028;
         public static int dialog=0x7f05000e;
         public static int dialog_view=0x7f05004b;
@@ -1240,11 +1404,12 @@ containing a value of this type.
         public static int expanded_menu=0x7f05002c;
         public static int home=0x7f050014;
         public static int homeAsUp=0x7f050005;
+        public static int hourwheel=0x7f050057;
         public static int icon=0x7f05002a;
         public static int ifRoom=0x7f05000a;
         public static int image=0x7f050027;
         public static int img=0x7f05004c;
-        public static int iv=0x7f050055;
+        public static int iv=0x7f05005b;
         public static int lastUpdate=0x7f050052;
         public static int layout=0x7f05004f;
         public static int listMode=0x7f050001;
@@ -1254,6 +1419,8 @@ containing a value of this type.
         public static int main=0x7f05003c;
         public static int message=0x7f050043;
         public static int middle=0x7f050012;
+        public static int minutewheel=0x7f050058;
+        public static int monthwheel=0x7f050055;
         public static int more=0x7f050049;
         public static int never=0x7f050009;
         public static int noData=0x7f050048;
@@ -1274,6 +1441,7 @@ containing a value of this type.
         public static int search_plate=0x7f050036;
         public static int search_src_text=0x7f050037;
         public static int search_voice_btn=0x7f05003b;
+        public static int secondwheel=0x7f050059;
         public static int shortcut=0x7f05002e;
         public static int showCustom=0x7f050007;
         public static int showHome=0x7f050004;
@@ -1287,12 +1455,13 @@ containing a value of this type.
         public static int title=0x7f05002b;
         public static int titleDivider=0x7f050041;
         public static int title_template=0x7f05003f;
-        public static int toast_layout_root=0x7f050054;
+        public static int toast_layout_root=0x7f05005a;
         public static int topPanel=0x7f05003e;
         public static int top_action_bar=0x7f050020;
         public static int up=0x7f050021;
         public static int useLogo=0x7f050003;
         public static int withText=0x7f05000c;
+        public static int yearwheel=0x7f050054;
     }
     public static final class integer {
         /**  The maximum number of action buttons that should be permitted within
@@ -1350,7 +1519,8 @@ containing a value of this type.
         public static int net_dialog_loaing=0x7f03001b;
         public static int pull_to_refresh_header=0x7f03001c;
         public static int support_simple_spinner_dropdown_item=0x7f03001d;
-        public static int toast=0x7f03001e;
+        public static int time_picker=0x7f03001e;
+        public static int toast=0x7f03001f;
     }
     public static final class menu {
         public static int main=0x7f0c0000;
@@ -2887,6 +3057,325 @@ containing a value of this type.
           @attr name android:windowAnimationStyle
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
+        /** 适配百分比  
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_heightPercent com.jmheart:layout_heightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginBottomPercent com.jmheart:layout_marginBottomPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginEndPercent com.jmheart:layout_marginEndPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginLeftPercent com.jmheart:layout_marginLeftPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginPercent com.jmheart:layout_marginPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginRightPercent com.jmheart:layout_marginRightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginStartPercent com.jmheart:layout_marginStartPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginTopPercent com.jmheart:layout_marginTopPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_maxHeightPercent com.jmheart:layout_maxHeightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_maxWidthPercent com.jmheart:layout_maxWidthPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_minHeightPercent com.jmheart:layout_minHeightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_minWidthPercent com.jmheart:layout_minWidthPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_paddingBottomPercent com.jmheart:layout_paddingBottomPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_paddingLeftPercent com.jmheart:layout_paddingLeftPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_paddingPercent com.jmheart:layout_paddingPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_paddingRightPercent com.jmheart:layout_paddingRightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_paddingTopPercent com.jmheart:layout_paddingTopPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_textSizePercent com.jmheart:layout_textSizePercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_widthPercent com.jmheart:layout_widthPercent}</code></td><td></td></tr>
+           </table>
+           @see #PercentLayout_Layout_layout_heightPercent
+           @see #PercentLayout_Layout_layout_marginBottomPercent
+           @see #PercentLayout_Layout_layout_marginEndPercent
+           @see #PercentLayout_Layout_layout_marginLeftPercent
+           @see #PercentLayout_Layout_layout_marginPercent
+           @see #PercentLayout_Layout_layout_marginRightPercent
+           @see #PercentLayout_Layout_layout_marginStartPercent
+           @see #PercentLayout_Layout_layout_marginTopPercent
+           @see #PercentLayout_Layout_layout_maxHeightPercent
+           @see #PercentLayout_Layout_layout_maxWidthPercent
+           @see #PercentLayout_Layout_layout_minHeightPercent
+           @see #PercentLayout_Layout_layout_minWidthPercent
+           @see #PercentLayout_Layout_layout_paddingBottomPercent
+           @see #PercentLayout_Layout_layout_paddingLeftPercent
+           @see #PercentLayout_Layout_layout_paddingPercent
+           @see #PercentLayout_Layout_layout_paddingRightPercent
+           @see #PercentLayout_Layout_layout_paddingTopPercent
+           @see #PercentLayout_Layout_layout_textSizePercent
+           @see #PercentLayout_Layout_layout_widthPercent
+         */
+        public static final int[] PercentLayout_Layout = {
+            0x7f01007b, 0x7f01007c, 0x7f01007d, 0x7f01007e,
+            0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082,
+            0x7f010083, 0x7f010084, 0x7f010085, 0x7f010086,
+            0x7f010087, 0x7f010088, 0x7f010089, 0x7f01008a,
+            0x7f01008b, 0x7f01008c, 0x7f01008d
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_heightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_heightPercent
+        */
+        public static final int PercentLayout_Layout_layout_heightPercent = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginBottomPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginBottomPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginBottomPercent = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginEndPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginEndPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginEndPercent = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginLeftPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginLeftPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginLeftPercent = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginPercent = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginRightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginRightPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginRightPercent = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginStartPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginStartPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginStartPercent = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_marginTopPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_marginTopPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginTopPercent = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_maxHeightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_maxHeightPercent
+        */
+        public static final int PercentLayout_Layout_layout_maxHeightPercent = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_maxWidthPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_maxWidthPercent
+        */
+        public static final int PercentLayout_Layout_layout_maxWidthPercent = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_minHeightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_minHeightPercent
+        */
+        public static final int PercentLayout_Layout_layout_minHeightPercent = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_minWidthPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_minWidthPercent
+        */
+        public static final int PercentLayout_Layout_layout_minWidthPercent = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_paddingBottomPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_paddingBottomPercent
+        */
+        public static final int PercentLayout_Layout_layout_paddingBottomPercent = 16;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_paddingLeftPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_paddingLeftPercent
+        */
+        public static final int PercentLayout_Layout_layout_paddingLeftPercent = 17;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_paddingPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_paddingPercent
+        */
+        public static final int PercentLayout_Layout_layout_paddingPercent = 14;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_paddingRightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_paddingRightPercent
+        */
+        public static final int PercentLayout_Layout_layout_paddingRightPercent = 18;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_paddingTopPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_paddingTopPercent
+        */
+        public static final int PercentLayout_Layout_layout_paddingTopPercent = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_textSizePercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_textSizePercent
+        */
+        public static final int PercentLayout_Layout_layout_textSizePercent = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#layout_widthPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.jmheart:layout_widthPercent
+        */
+        public static final int PercentLayout_Layout_layout_widthPercent = 0;
         /** Attributes that can be used with a RangeBar.
            <p>Includes the following attributes:</p>
            <table>
@@ -3068,6 +3557,41 @@ containing a value of this type.
           @attr name com.jmheart:tickHeight
         */
         public static final int RangeBar_tickHeight = 1;
+        /** Attributes that can be used with a RichText.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RichText_errorImage com.jmheart:errorImage}</code></td><td></td></tr>
+           <tr><td><code>{@link #RichText_placeHolder com.jmheart:placeHolder}</code></td><td></td></tr>
+           </table>
+           @see #RichText_errorImage
+           @see #RichText_placeHolder
+         */
+        public static final int[] RichText = {
+            0x7f010079, 0x7f01007a
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#errorImage}
+          attribute's value can be found in the {@link #RichText} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.jmheart:errorImage
+        */
+        public static final int RichText_errorImage = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.jmheart.R.attr#placeHolder}
+          attribute's value can be found in the {@link #RichText} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.jmheart:placeHolder
+        */
+        public static final int RichText_placeHolder = 0;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
            <table>
