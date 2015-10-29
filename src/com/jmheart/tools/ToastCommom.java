@@ -48,7 +48,7 @@ public class ToastCommom {
 		text.setText(tvString);
 		toast = new Toast(mcontext);
 		toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-		toast.setDuration(Toast.LENGTH_LONG);
+		toast.setDuration(Toast.LENGTH_SHORT);
 		toast.setView(layout);
 		toast.show();
 	}

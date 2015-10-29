@@ -131,4 +131,12 @@ public class StringUtil {
 		String ts = tsLong.toString();
 		return ts;
 	}
+	public static int tonull(String str)
+	{
+		if (str==null) {
+		
+			return 0;
+		}
+		return 0;
+	}
 }

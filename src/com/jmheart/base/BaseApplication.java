@@ -1,6 +1,7 @@
 package com.jmheart.base;
 
 import java.util.ArrayList;
+import java.util.Properties;
 
 import android.app.Activity;
 import android.app.Application;
@@ -10,10 +11,10 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.Handler;
 
-import com.baidu.mapapi.SDKInitializer;
 import com.jmheart.R;
 import com.jmheart.abnormal.CrashHandler;
 import com.jmheart.net.ApiHttpClient;
+import com.jmheart.tools.DataCleanManager;
 import com.loopj.android.http.AsyncHttpClient;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -73,8 +74,7 @@ public class BaseApplication extends Application {
 		// TODO Auto-generated method stub
 		super.onCreate();
 		setInstance(this);
-		//初始化百度地图
-		SDKInitializer.initialize(getApplicationContext());
+		
 		appinitImageLoader(getApplicationContext());
 		CrashHandler handler = new CrashHandler();
 		handler.init(getApplicationContext());

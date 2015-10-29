@@ -6,6 +6,7 @@
     <color name="grey">#AAAAAA</color>
     <color name="blue">#4169E1</color>
     <color name="yellow">#EEEE00</color>
+    <color name="orng">#FF7f00</color>
       <color name="divider_color">#11000000</color>
     <color name="msg_color">#FFFFFFFF</color>
     <color name="dialog_bg">#ffe74c3c</color>

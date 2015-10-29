@@ -239,6 +239,8 @@ public class AsyncHttpResponseHandler {
         try {
             String response = new String(responseBody, getCharset());
             BaseActivity.showLog("ÇëÇó·µ»Ø£º"+response);
+            response=response.replaceAll("null","''");//È¥³ýnull
+             response=response.replaceAll("\\\\", "");
             onSuccess(statusCode, headers, response);
         } catch (UnsupportedEncodingException e) {
             Log.e(LOG_TAG, e.toString());

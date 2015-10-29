@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
+  
         android:orientation="horizontal">
       
         <TextView
@@ -73,6 +74,7 @@
         <com.wheel.WheelView android:id="@+id/monthwheel"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
+            
             android:layout_weight="1"/>
         <com.wheel.WheelView android:id="@+id/daywheel"
             android:layout_height="wrap_content"
@@ -80,12 +82,12 @@
             android:layout_weight="1"/>
         <com.wheel.WheelView android:id="@+id/hourwheel"
             android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:layout_weight="1"/> 
+            android:layout_width="fill_parent"  
+            android:layout_weight="1"/>   
         <com.wheel.WheelView android:id="@+id/minutewheel"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:layout_weight="1"/> 
+            android:layout_weight="1"/>  
         <com.wheel.WheelView android:id="@+id/secondwheel"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"

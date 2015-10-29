@@ -10,38 +10,65 @@
         <attr name="thumbRadius" format="dimension" />
         <attr name="thumbImageNormal" format="reference" />
         <attr name="thumbImagePressed" format="reference" />
-        <attr name="thumbColorNormal" format="reference|color"/>
-        <attr name="thumbColorPressed" format="reference|color"/>
+        <attr name="thumbColorNormal" format="reference|color" />
+        <attr name="thumbColorPressed" format="reference|color" />
     </declare-styleable>
-
     <declare-styleable name="RichText">
         <attr name="placeHolder" format="reference" />
         <attr name="errorImage" format="reference" />
     </declare-styleable>
-    <!--适配百分比  -->
-	<declare-styleable name="PercentLayout_Layout">
-        <attr name="layout_widthPercent" format="string"/>
-        <attr name="layout_heightPercent" format="string"/>
+    <!-- 适配百分比 -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+        <attr name="layout_textSizePercent" format="string" />
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
 
-        <attr name="layout_marginPercent" format="string"/>
-        <attr name="layout_marginLeftPercent" format="string"/>
-        <attr name="layout_marginTopPercent" format="string"/>
-        <attr name="layout_marginRightPercent" format="string"/>
-        <attr name="layout_marginBottomPercent" format="string"/>
-        <attr name="layout_marginStartPercent" format="string"/>
-        <attr name="layout_marginEndPercent" format="string"/>
-
-        <attr name="layout_textSizePercent" format="string"/>
-
-        <attr name="layout_maxWidthPercent" format="string"/>
-        <attr name="layout_maxHeightPercent" format="string"/>
-        <attr name="layout_minWidthPercent" format="string"/>
-        <attr name="layout_minHeightPercent" format="string"/>
-
-        <attr name="layout_paddingPercent" format="string"/>
-        <attr name="layout_paddingTopPercent" format="string"/>
-        <attr name="layout_paddingBottomPercent" format="string"/>
-        <attr name="layout_paddingLeftPercent" format="string"/>
-        <attr name="layout_paddingRightPercent" format="string"/>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
     </declare-styleable>
 </resources>

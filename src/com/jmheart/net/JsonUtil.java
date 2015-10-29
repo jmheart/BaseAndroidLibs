@@ -70,7 +70,7 @@ public class JsonUtil {
 		JSONObject jsonobj = new JSONObject(json);
 		T object = clazz.newInstance();
 		for(int i = 0 ; i < names.length ; i++){
-			Object hah = jsonobj.get(names[i].getName());
+			Object hah = jsonobj.get(names[i].getName()).toString();
 			if(hah instanceof JSONObject){
 				hah = parserJsonToObject(names[i].getType(),(JSONObject)hah);
 			}
@@ -89,11 +89,11 @@ public class JsonUtil {
 		Field[] names = clazz.getDeclaredFields();
 		T object = clazz.newInstance();
 		for(int i = 0 ; i < names.length ; i++){
-			Object hah = jsonobj.get(names[i].getName());
+			Object hah = jsonobj.get(names[i].getName()).toString();
 			if(hah instanceof JSONObject){
 				hah = parserJsonToObject(names[i].getType(),(JSONObject)hah);
 			}
-			names[i].set(object, hah);
+			names[i].set(jsonobj, hah);
 		}
 		return object;
 	}
